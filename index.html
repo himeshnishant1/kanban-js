@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main class="container">
+        <div class="wrap">
+            <div class="inner-first">
+                <p class="heading">Kanban</p>
+                <p class="sub-heading">manage you activites with this application</p>
+            </div>
+            <div class="inner-last">
+                <section class="to-do section">
+                    <div class="to-do-wrap inner-wrap">
+                        <div class="to-do-header hdr">
+                            <p class="to-do-heading hd">TODO</p>
+                            <span class="to-do-task-count ct">0</span>
+                        </div>
+                        <div class="to-do-activities actv">
+                            
+                        </div>
+                        <div class="to-do-add-task addt">
+                            <form class="todo-add-new addn">
+                                <input type="text" name="to-do-new-task-name" class="to-do-new-task-name newn" id="to-do-new-task-name" placeholder = "New Task">
+                                <input type="submit" value="+" class="add-button">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="in-progress section">
+                    <div class="progress-wrap inner-wrap">
+                        <div class="progress-header hdr">
+                            <p class="progress-heading hd">IN-PROGRESS</p>
+                            <span class="progress-task-count ct">0</span>
+                        </div>
+                        <div class="progress-activities actv">
+                            
+                        </div>
+                        <div class="progress-add-task addt">
+                            <form class="progress-add-new addn">
+                                <input type="text" name="progress-new-task-name" class="progress-new-task-name newn" id="progress-new-task-name" placeholder = "New Task">
+                                <input type="submit" value="+" class="add-button">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="completed section">
+                    <div class="completed-wrap inner-wrap">
+                        <div class="completed-header hdr">
+                            <p class="completed-heading hd">COMPLETED</p>
+                            <span class="completed-task-count ct">0</span>
+                        </div>
+                        <div class="completed-activities actv">
+            
+                        </div>
+                        <div class="completed-add-task addt">
+                            <form class="completed-add-new addn">
+                                <input type="text" name="completed-new-task-name" class="completed-new-task-name newn" id="completed-new-task-name" placeholder = "New Task">
+                                <input type="submit" value="+" class="add-button">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
