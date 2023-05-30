@@ -22,7 +22,7 @@ export default class Kanban{
         const data = read();
         function findColumnTask(){
             for(const column of data){
-                const task = column.tasks.find(tasks => task.taskId == taskId);
+                const task = column.tasks.find(t => t.taskId == taskId);
                 if(task){
                     return [task, column];
                 }
@@ -43,10 +43,12 @@ export default class Kanban{
     static deleteTask(taskId){
         const data = read();
         for(const column of data){
-            const task = column.tasks.find( task => task.taskId == taskId);
-            column.tasks.splice(column.tasks.indexOf(task), 1);
+            const task = column.tasks.find(t => t.taskId == taskId);
+            if(task){
+                column.tasks.splice(column.tasks.indexOf(task), 1);
+                break;
+            }
         }
-
         write(data);
     }
 

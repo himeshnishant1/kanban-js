@@ -110,6 +110,10 @@ body{
     margin: 10px 0px;
 }
 
+.actv .card.dragging{
+    opacity: 0.4;
+}
+
 .card .card-section1{
     padding: 10px;
 }
